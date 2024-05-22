@@ -97,4 +97,5 @@ body:hover > #trailer {
     
     opacity: 30%;
     background-image: linear-gradient(to right, #00000005, #ffffff50);
+    transition: width 0.3s ease-out;
 }

@@ -1,5 +1,3 @@
-// JS cho đuôi cursor
-
 const trailer = document.getElementById("trailer");
 
 let prevX = 0;

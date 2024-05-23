@@ -1,11 +1,16 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
+let animation = false;
 
 
 // .nav-item là tên element để áp dụng cái effect, tùng code tới đoạn nav thì tự đổi tên rồi áp vào nhé
 document.querySelectorAll(".nav_item").forEach(element => {
     element.addEventListener('mouseover', event => {
+        if(animation){
+            return;
+        }
+        animation = true;
         let iteration = 0;
         clearInterval(interval);
 
@@ -21,7 +26,8 @@ document.querySelectorAll(".nav_item").forEach(element => {
             .join("");
 
             if (iteration >= event.target.dataset.value.length) {
-            clearInterval(interval);
+                clearInterval(interval);
+                animation = false
             }
 
             iteration += 1 / 2;

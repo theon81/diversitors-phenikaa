@@ -10,6 +10,8 @@ body {
     margin: 0px;  
 
     gap: clamp(10px, 4vw, 100px);
+
+    margin-bottom: 1000px;
 }
 
 
@@ -50,7 +52,7 @@ body:hover > #trailer {
 }
 
 
-/* testing glitch effect
+/* testing glitch effect */
 .container .glitch_text_test {
     height: 100vh;
 
@@ -80,7 +82,7 @@ body:hover > #trailer {
     font-weight: 600;
 
     color: white;
-} */
+}
 
 
 /* progress bar ngang */
@@ -96,6 +98,14 @@ body:hover > #trailer {
     height: 100%;
     
     opacity: 30%;
-    background-image: linear-gradient(to right, #00000005, #ffffff50);
+    background-image: linear-gradient(to right, #7dbf27dc, #1c2987a3);
     transition: width 0.3s ease-out;
 }
+
+
+
+/*
+    css thi css lan luot class tu tren xuong theo file html nhe 
+    nhung class dac biet (ex: .text_white{color: white !important})
+    thi viet len tren dau duoi the *
+*/

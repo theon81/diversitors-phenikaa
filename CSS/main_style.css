@@ -4,15 +4,6 @@
     margin: 0;
 }
 
-
-.temp{
-    background-color: red;
-    text-align: center;
-    box-sizing: border-box;
-    padding-top:30px ;
-    margin: 0 5px;
-}
-
 body {
     background-color: rgb(20, 20, 20);
     /* background-image: url(../IMG/bg_314.gif); */
@@ -23,6 +14,7 @@ body {
     gap: clamp(10px, 4vw, 100px);
 
     margin-bottom: 1000px;
+
 }
 
 
@@ -66,17 +58,34 @@ body:hover > #trailer {
 
 
 
+
 #container{
     min-height: 100vh;
     /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
 }
+.cursor_lineargradient{
+    background-image: linear-gradient(60deg,#ff3e9d,#b2347f,#4a2757,#0e1f40);
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    border-radius: 250px;
+    filter: blur(45px);
+    top: 0;
+    left: 0;
+
+    z-index: -500;
+}
+
 
 /* Begin navigation  */
 #navigation{
-    background-color: cadetblue;
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100px;
     display: flex;
@@ -85,33 +94,35 @@ body:hover > #trailer {
 
     position: fixed;
 }
+.navigation_items{
+    /* background-color: red; */
+    height: 70px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top:30px ;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid rgba(0, 0, 0, 0.3) ;
+}
 #navigation #menu{
     width: 5%;
-    height: 70px;
 }
 #navigation #nav{
     width: 80%;
-    height: 70px;
 }
 #navigation #logo{
     width: 10%;
-    height: 70px;
 }
 
 
 /* progress bar ngang */
-.progress_bar {
-    width: 100%;
-    height: 87px;
-
-    
-
-    /* position: fixed; */
-}
 
 .progress_bar_fill {
     width: 0;
-    height: 100%;
+    height: 60px;
+    margin-top: -29px;
     
     opacity: 30%;
     background-image: linear-gradient(to right, #7dbf27dc, #1c2987a3);
@@ -123,7 +134,7 @@ body:hover > #trailer {
 
 /* Begin introduce  */
 #introduce{
-    background-color:bisque;
+    /* background-color:bisque; */
     width: 100%;
     height: 1080px;
     display: flex;
@@ -136,7 +147,7 @@ body:hover > #trailer {
 
 /* Begin project  */
 #project{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     height: 3400px;
     display: flex;
@@ -221,7 +232,7 @@ body:hover > #trailer {
 
 /* Begin footer  */
 #footer{
-    background-color: blue;
+    /* background-color: blue; */
 
     width: 100%;
     height: 3200px;
@@ -231,7 +242,7 @@ body:hover > #trailer {
     width: 100%;
     height: 260px;
     position: sticky;
-    top: 0;
+    top: 100px;
 }
 /* End footer  */
 

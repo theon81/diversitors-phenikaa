@@ -14,7 +14,6 @@ body {
     gap: clamp(10px, 4vw, 100px);
 
     margin-bottom: 1000px;
-
 }
 
 
@@ -233,16 +232,29 @@ body:hover > #trailer {
 /* Begin footer  */
 #footer{
     /* background-color: blue; */
-
     width: 100%;
-    height: 3200px;
+    height: 850px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
 }
 #footer #footer_nav{
-    background-color: black;
+    background-color: white;
     width: 100%;
-    height: 260px;
+    height: 250px;
     position: sticky;
-    top: 100px;
+    top: 0;
+}
+
+#footer #footer_img {
+    width: 100%;
+    height: 600px;
+
+    background-image: url(../IMG/DVR-footer-logo.png);
+
+
 }
 /* End footer  */
 

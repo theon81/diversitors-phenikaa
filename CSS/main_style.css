@@ -146,9 +146,9 @@ body:hover > #trailer {
 
 /* Begin project  */
 #project{
-    /* background-color: aqua; */
+    background-color: aqua;
     width: 100%;
-    height: 3400px;
+    height: 700px;
     display: flex;
     align-items: center;
     overflow: hidden;

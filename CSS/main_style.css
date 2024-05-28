@@ -104,25 +104,33 @@ body:hover > #trailer {
     height: 70px;
 
     padding-top:30px ;
-    margin: 0 5px;
+    margin: 0 1px;
     
     display: flex;
     align-items: center;
     
     text-align: center;
 
-    border: 2px solid rgba(0, 0, 0, 0.3) ;
+    border: 2px solid rgba(255, 255, 255, 0.1);
 
     box-sizing: border-box;
 }
 #navigation #menu{
     width: 5%;
+    margin: 0;
+    padding: 0;
 }
 #navigation #nav{
     width: 80%;
+    /* padding: 0 5px; */
 }
 #navigation #logo{
     width: 10%;
+}
+
+#navigation #menu i{
+    font-size: 24px;
+    color: white;
 }
 
 
@@ -130,13 +138,13 @@ body:hover > #trailer {
 
 .progress_bar_fill {
     width: 0;
-    height: 60px;
+    height: 70px;
 
     margin-top: -29px;
     
     opacity: 30%;
 
-    background-image: linear-gradient(to right, #7dbf27dc, #1c2987a3);
+    background-image: linear-gradient(to right, #d0d7c7dc, #4a1a39a3);
     
     transition: width 0.3s ease-out;
 }
@@ -209,7 +217,7 @@ body:hover > #trailer {
 #slogan h1{
     font-size: 80px;
     font-weight: 800;
-    
+
     margin-left: 45px;
 }
 /* End slogan  */

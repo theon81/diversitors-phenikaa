@@ -61,9 +61,11 @@ body:hover > #trailer {
 #container{
     min-height: 100vh;
     /* background-color: aqua; */
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     position: relative;
 
 }
@@ -71,13 +73,14 @@ body:hover > #trailer {
     background-image: linear-gradient(60deg,#ff3e9d,#b2347f,#4a2757,#0e1f40);
     width: 400px;
     height: 400px;
-
-    position: absolute;
     border-radius: 250px;
-    filter: blur(85px);
+
     top: 0;
     left: 0;
+    
+    filter: blur(85px);
 
+    position: absolute;
     z-index: -500;
 }
 
@@ -87,23 +90,30 @@ body:hover > #trailer {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: fixed;
+
+    z-index: 100;
 }
 .navigation_items{
     /* background-color: red; */
     height: 70px;
-    text-align: center;
-    box-sizing: border-box;
+
     padding-top:30px ;
     margin: 0 5px;
+    
     display: flex;
     align-items: center;
+    
+    text-align: center;
 
     border: 2px solid rgba(0, 0, 0, 0.3) ;
+
+    box-sizing: border-box;
 }
 #navigation #menu{
     width: 5%;
@@ -121,10 +131,13 @@ body:hover > #trailer {
 .progress_bar_fill {
     width: 0;
     height: 60px;
+
     margin-top: -29px;
     
     opacity: 30%;
+
     background-image: linear-gradient(to right, #7dbf27dc, #1c2987a3);
+    
     transition: width 0.3s ease-out;
 }
 /* End progressbar */
@@ -136,6 +149,7 @@ body:hover > #trailer {
     /* background-color:bisque; */
     width: 100%;
     height: 1080px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,20 +163,23 @@ body:hover > #trailer {
     background-color: aqua;
     width: 100%;
     height: 700px;
+
     display: flex;
     align-items: center;
+    justify-content: center;
+
     overflow: hidden;
 }
 #project_block {
     background-color: #ff3e9d;
-    width: 120%;
+    width: auto;
     height: 400px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    transform: rotate(5deg);
+    transform:translate(-25px,0) rotate(5deg);
 }
 
 #project .project_card{
@@ -181,7 +198,9 @@ body:hover > #trailer {
 #slogan{
     background-color: brown;
     width: 100%;
+
     padding: 30px 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -190,6 +209,7 @@ body:hover > #trailer {
 #slogan h1{
     font-size: 80px;
     font-weight: 800;
+    
     margin-left: 45px;
 }
 /* End slogan  */

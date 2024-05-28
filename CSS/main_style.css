@@ -75,7 +75,7 @@ body:hover > #trailer {
 
     position: absolute;
     border-radius: 250px;
-    filter: blur(45px);
+    filter: blur(85px);
     top: 0;
     left: 0;
 

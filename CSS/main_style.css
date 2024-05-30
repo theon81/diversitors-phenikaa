@@ -179,7 +179,21 @@ body:hover > #trailer {
 
     overflow: hidden;
 }
-#project_block {
+#project_block{
+    width: 100%;
+    height: 600px;
+    background-color: #4a2757;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+
+
+    position: relative;
+}
+.card-container {
     background-color: #ff3e9d;
     width: auto;
     height: 400px;
@@ -187,8 +201,11 @@ body:hover > #trailer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* animation: animation_card 10s infinite linear; */
 
-    transform:translate(-25px,0) rotate(5deg);
+    transform: translateX(1200px) rotate(3deg);
+    transform-origin: center center;
 }
 
 #project .project_card{
@@ -358,6 +375,15 @@ body:hover > #trailer {
 
 }
 /* End footer  */
+
+@keyframes animation_card{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1200px);
+    }
+}
 
 
 

@@ -2,6 +2,7 @@
     user-select: none;
     padding: 0;
     margin: 0;
+    font-family: "Kode Mono",monospace;
 }
 
 body {
@@ -87,7 +88,7 @@ body:hover > #trailer {
 
 /* Begin navigation  */
 #navigation{
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
     width: 100%;
     height: 100px;
 
@@ -112,6 +113,7 @@ body:hover > #trailer {
     text-align: center;
 
     border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 
     box-sizing: border-box;
 }
@@ -178,7 +180,21 @@ body:hover > #trailer {
 
     overflow: hidden;
 }
-#project_block {
+#project_block{
+    width: 100%;
+    height: 600px;
+    background-color: #4a2757;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+
+
+    position: relative;
+}
+.card-container {
     background-color: #ff3e9d;
     width: auto;
     height: 400px;
@@ -186,8 +202,11 @@ body:hover > #trailer {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    /* animation: animation_card 10s infinite linear; */
 
-    transform:translate(-25px,0) rotate(5deg);
+    transform: translateX(1200px) rotate(3deg);
+    transform-origin: center center;
 }
 
 #project .project_card{
@@ -261,48 +280,114 @@ body:hover > #trailer {
     background-color: burlywood;
 
     width: 100%;
-    height: 4320px;
+    height: 4020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* BEnd teams  */
+.menber {
+    width: 95%;
+    height: 800px;
+
+    margin: 40px 0;
+
+    display: flex;
+}
+
+.menber.menber-reverse{
+    flex-direction: row-reverse;
+}
+
+.menber_card {
+    background-color: #4a2757;
+    width: 40%;
+
+    position: relative;
+
+}
+.menber_card-img {
+    background-color: #ff3e9d;
+    width: 100%;
+    height: 650px;
+
+    position: absolute;
+    top: 75px;
+    left: 45%;
+
+    z-index: 2;
+}
+.menber_card-background {
+    background-color: aqua;
+    width: 50%;
+    height: 450px;
+
+    position: absolute;
+    top: 275px;
+    left: 45%;
+}
+
+.menber-reverse .menber_card-img{
+    left: -45%;
+}
+.menber-reverse .menber_card-background{
+    left: 5%;
+}
+
+.menber_profile {
+    background-color: #0e1f40;
+    width: 60%;
+}
+.menber_profile h2{
+    color: white;
+    font-weight: 300;
+}
+/* End teams  */
 
 
 /* Begin footer  */
 #footer{
     /* background-color: blue; */
     width: 100%;
-    height: 850px;
-    box-sizing: border-box;
+
 
     display: flex;
     flex-direction: column;
     flex-grow: 0;
 }
 #footer #footer_nav{
-    background-color: white;
+    background-color: #000;
     width: 100%;
-    height: 250px;
+    height: 300px;
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+
     position: sticky;
     top: 0;
+
+    z-index: 100;
 }
 
 #footer #footer_img {
+    margin-top: 200px;
     width: 100%;
-    height: 600px;
+    height: 650px;
 
     background-image: url(../IMG/DVR-footer-logo.png);
-
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 /* End footer  */
 
+@keyframes animation_card{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1200px);
+    }
+}
 
 
-
-
-
-
-/*
-    css thi css lan luot class tu tren xuong theo file html nhe 
-    nhung class dac biet (ex: .text_white{color: white !important})
-    thi viet len tren dau duoi the *
-*/

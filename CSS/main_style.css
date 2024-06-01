@@ -356,9 +356,13 @@ body:hover > #trailer {
     flex-grow: 0;
 }
 #footer #footer_nav{
-    background-color: white;
+    background-color: #000;
     width: 100%;
-    height: 250px;
+    height: 300px;
+
+    border: 2px solid rgba(255, 255, 255, 0.3);
+
+
     position: sticky;
     top: 0;
 
@@ -387,13 +391,3 @@ body:hover > #trailer {
 }
 
 
-
-
-
-
-
-/*
-    css thi css lan luot class tu tren xuong theo file html nhe 
-    nhung class dac biet (ex: .text_white{color: white !important})
-    thi viet len tren dau duoi the *
-*/

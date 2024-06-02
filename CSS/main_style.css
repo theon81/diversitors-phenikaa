@@ -353,6 +353,9 @@ body:hover > #trailer {
 
     z-index: 2;
 }
+.menber_card-img:hover {
+    
+}
 .menber_card-background {
     background-color: aqua;
     width: 50%;

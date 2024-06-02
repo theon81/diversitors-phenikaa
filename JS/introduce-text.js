@@ -3,11 +3,11 @@ let currentLine = 0;
 
 function animateText() {
     lines.forEach((line, index) => {
-        line.style.animation = 'none'; // Reset animation
+        line.style.animation = 'none';
         if (index === currentLine) {
             line.style.animation = 'fadeIn 0.4s ease forwards';
-            const words = line.textContent.split(' ');
-            line.innerHTML = words.map((word, i) => `<span style="animation: fadeIn 0.4s ease forwards ${i * 0.4}s;">${word}</span>`).join(' ');
+            const words = line.textContent.split(/(\s|,\s)/);
+            line.innerHTML = words.map((word, i) => `<span style="animation: fadeIn 0.4s ease forwards ${i * 0.4}s;">${word}</span>`).join('');
         } else {
             line.style.animation = 'fadeOut 0.4s ease forwards';
         }

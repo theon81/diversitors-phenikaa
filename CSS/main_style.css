@@ -181,26 +181,48 @@ body:hover > #trailer {
     justify-content: center;
     align-items: center;
 
-    font-size: 2em;
+    font-size: 4em;
     color: white;
+
+    /* xoá dòng này r căn lại text ra giữa */
+    transform: translateX(-15%);   
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .text-line {
     position: absolute;
     opacity: 0;
-    animation: fadeOut 0.4s ease forwards;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
+.text-line.active {
+    opacity: 1;
 }
 
-@keyframes fadeOut {
-    0% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-20px); }
+.container--word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(150%);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
+.part--first {
+    transition-delay: 0.2s;
+}
+
+.part--second {
+    transition-delay: 0.6s;
+}
+
+.word-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* End introduce  */
 
 

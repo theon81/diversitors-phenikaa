@@ -371,70 +371,83 @@ ul {
     /* background-color: burlywood; */
 
     width: 100%;
-    height: 4020px;
+    height: 3520px;
+
+    padding-top: 200px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .menber {
+    background-color: aqua;
     width: 95%;
     height: 800px;
 
     margin: 40px 0;
 
     display: flex;
-}
-
-.menber.menber-reverse{
-    flex-direction: row-reverse;
-}
-
-.menber_card {
-    background-color: #4a2757;
-    width: 40%;
 
     position: relative;
-
 }
-.menber_card-img {
+
+/* .menber.menber-reverse{
+    flex-direction: row-reverse;
+} */
+
+.menber .menber-image{
     background-color: #ff3e9d;
-    width: 100%;
-    height: 650px;
+    width: 35%;
+    height: 700px;
+
+    margin: 50px;
 
     position: absolute;
-    top: 75px;
-    left: 45%;
+    left: 20%;
 
-    z-index: 2;
+    z-index: 20;
+
+    transition: transform 800ms ease-in-out;
 }
-.menber_card-img:hover {
-    
-}
-.menber_card-background {
-    background-color: aqua;
+/* .menber.menber-revers .menber-image{
+    left: 0;
+    right: 20%;
+} */
+
+.menber .menber-profile{
+    background-color: #4a2757;
     width: 50%;
-    height: 450px;
+    height: 700px;
+
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    opacity: 0;
 
     position: absolute;
-    top: 275px;
-    left: 45%;
+    right: 0;
+
+    transition: all 1200ms ease-in-out;
+}
+.menber .menber-profile h2{
+    background-color: beige;
+    margin: 5px;
+
+    font-size: 28px;
 }
 
-.menber-reverse .menber_card-img{
-    left: -45%;
-}
-.menber-reverse .menber_card-background{
-    left: 5%;
+.menber:hover .menber-image{
+    transform: translateX(400px);
 }
 
-.menber_profile {
-    background-color: #0e1f40;
-    width: 60%;
-}
-.menber_profile h2{
-    color: white;
-    font-weight: 300;
+.menber:hover .menber-profile{
+    transform: translateX(-500px);
+    opacity: 1;
 }
 /* End teams  */
 

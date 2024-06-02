@@ -25,13 +25,6 @@ body {
     box-sizing: border-box;
 }
 
-#site_overlay {
-    width: 100vw;
-    height: 100vh;
-    margin: 30px;
-
-}
-
 /* Begin trailer  */
 body:hover > #trailer {
     opacity: 1;
@@ -235,6 +228,8 @@ body:hover > #trailer {
     width: 100%;
     height: 1080px;
 
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items:center;
@@ -245,13 +240,36 @@ body:hover > #trailer {
     
     /* xoá dòng này r căn lại text ra giữa */
     /* transform: translateX(-15%);    */
+
+    background-image: url(../IMG/GD96r4nbsAArBs3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#text-container #container_filter {
+    width: 100vw;
+    height: 1080px;
+
+    position: absolute;
+    background-image: linear-gradient(180deg, #ffffff10, #041421);
+
+    z-index: 11;
 }
 
 #text-container #text-container-center{
     width: 45%;
     height: 200px;
+    margin-top: 200px;
+
     display: flex;
+    justify-content: center;
     align-items: center;
+
+    /* left: 50%;
+    transform: translateX(5%); */
+
+    z-index: 100;
 }
 
 ul {
@@ -263,7 +281,7 @@ ul {
 
 .text-line {
     /* display: block; */
-    font-size: 4em;
+    font-size: 4.6em;
     color: white;
     position: absolute;
     opacity: 0;

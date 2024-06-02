@@ -29,6 +29,10 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+
+
+
 /* Begin trailer  */
 body:hover > #trailer {
     opacity: 1;
@@ -67,6 +71,7 @@ body:hover > #trailer {
     transition: opacity 400ms ease;
 }
 /* End trailer  */
+
 
 
 
@@ -111,6 +116,11 @@ body:hover > #trailer {
 #footer_img:hover .cursor_lineargradient{
     display: none;
 } */
+
+
+
+
+
 
 /* Begin navigation  */
 #navigation {
@@ -230,6 +240,10 @@ body:hover > #trailer {
     color: black;
 }
 
+
+
+
+
 /* progress bar ngang */
 .progress_bar_fill {
     width: 0;
@@ -258,6 +272,9 @@ body:hover > #trailer {
 }
 
 /* End navigation  */
+
+
+
 
 
 /* Begin text  */
@@ -326,6 +343,7 @@ ul {
     transition: opacity 0.6s ease, transform 0.6s ease;
 
 }
+
 .text-line > div {
     width: 100%;
     display: flex;
@@ -356,6 +374,9 @@ ul {
     transform: translateY(0);
 }
 /* End text  */
+
+
+
 
 
 /* Begin lament  */
@@ -439,6 +460,10 @@ ul {
 /* 670 x 1000 img */
 /* End lament  */
 
+
+
+
+
 /* Begin slogan  */
 #slogan{
     /* background-color: brown; */
@@ -465,9 +490,54 @@ ul {
 /* End slogan  */
 
 
-/* Begin vriteria  */
 
-/* End criteria  */
+
+
+/* Begin showcase */
+.showcase-image-track {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.showcase-image-track .showcase-image-back {
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    background-position: 40%, 10%;
+    z-index: 39;
+    transition: transform 0.3s ease;
+}
+
+.showcase-image-track .showcase-image-back:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+#showcase p {
+    position: absolute;
+    color: #fff;
+    font-size: 4em;
+    z-index: 40;
+}
+
+.showcase-image-track .showcase-image-back:hover ~ .showcase-image-back,
+.showcase-image-track .showcase-image-back:hover + .showcase-image-back {
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
+}
+
+.showcase-image-track .showcase-image-back:hover ~ .showcase-image-back:hover,
+.showcase-image-track .showcase-image-back:hover + .showcase-image-back:hover {
+    transform: translateX(-10px);
+    transition: transform 0.3s ease;
+}
+/* End showcase  */
+
+
+
 
 
 /* Begin slider  */
@@ -476,6 +546,8 @@ ul {
 
     height: 3200px;
     width: 100%;
+
+    padding-top: 40px;
 }
 
 #slider_container .slider_container-bar{
@@ -523,6 +595,9 @@ ul {
     background-repeat: no-repeat; 
 }
 /* End slider  */
+
+
+
 
 
 /* Begin teams  */
@@ -611,6 +686,9 @@ ul {
 /* End teams  */
 
 
+
+
+
 /* Begin footer  */
 #footer{
     /* background-color: blue; */
@@ -646,6 +724,10 @@ ul {
 
 }
 /* End footer  */
+
+
+
+
 
 @keyframes animation_card{
     0%{

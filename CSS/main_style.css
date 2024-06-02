@@ -286,7 +286,7 @@ body:hover > #trailer {
     height: 1080px;
 
     position: absolute;
-    background-image: linear-gradient(180deg, #ffffff10, #041421);
+    background-image: linear-gradient(180deg, #ffffff10 10%, #041421 81%);
 
     z-index: 11;
 }
@@ -429,7 +429,6 @@ ul {
 
 /* 670 x 1000 img */
 /* End lament  */
-
 
 /* Begin slogan  */
 #slogan{

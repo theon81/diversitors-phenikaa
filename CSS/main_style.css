@@ -360,10 +360,45 @@ ul {
 
 
 /* Begin slider  */
-.slider_container{
-    background-color: cyan;
+#slider_container{
+    /* background-color: cyan; */
+    overflow:hidden;
 
+    height: 1080px;
     width: 100%;
+}
+#slider_container #slider_horizontal{
+    background-color: brown;
+    height: 1880px;
+    width: 200%;
+    
+    overflow: scroll;
+
+    margin-top: 60px;
+    padding-bottom: 100px;
+    transform: translate(-650px,-300px) rotate(45deg);
+}
+#slider_container #slider_horizontal .horizontal_container{
+    width: 100%;
+    height: 400px;
+
+    margin: 55px 0;
+
+    background-color: #ff3e9d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#slider_horizontal .horizontal_container .horizontal_container-img{
+    width: 400px;
+    height: 380px;
+
+    margin: 10px 30px;
+
+    background-color: aqua;
 }
 
 

@@ -283,7 +283,7 @@ body:hover > #trailer {
     /* left: 50%;
     transform: translateX(5%); */
 
-    z-index: 100;
+    z-index: 12;
 }
 
 ul {
@@ -365,6 +365,13 @@ ul {
 
 .lament_column .lament_block .lament_title {
     padding-top: 15px;
+}
+
+.lament_column .lament_space_s {
+    width: 100%;
+    height: 100px;
+
+    background-color: #041421;
 }
 
 .lament_column .lament_space {
@@ -460,6 +467,29 @@ ul {
     height: 3200px;
     width: 100%;
 }
+
+#slider_container .slider_container-bar{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+#slider_container .slider_container-bar .sc-bold {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#slider_container .slider_container-bar .sc-desc {
+    letter-spacing: 2px;
+}
+
 #slider_container .slider_container-big{
     width: 100%;
     height: 850px;
@@ -469,6 +499,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat; 
 }
+
 #slider_container .slider_container-medium{ 
     width: 100%;
     height: 550px;
@@ -478,11 +509,7 @@ ul {
     background-position: center;
     background-repeat: no-repeat; 
 }
-#slider_container .slider_container-bar{
-    width: 100%;
-    height: 100px;
-    background-color:#b2347f;
-}
+
 
 
 

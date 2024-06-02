@@ -353,6 +353,13 @@ ul {
     padding-top: 15px;
 }
 
+.lament_column .lament_space_s {
+    width: 100%;
+    height: 100px;
+
+    background-color: #041421;
+}
+
 .lament_column .lament_space {
     width: 100%;
     height: 400px;

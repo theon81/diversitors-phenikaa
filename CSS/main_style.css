@@ -295,6 +295,11 @@ ul {
 
     margin-left: 45px;
 }
+
+#slogan h1:hover {
+    background-color: white;
+    color: black;
+  }
 /* End slogan  */
 
 

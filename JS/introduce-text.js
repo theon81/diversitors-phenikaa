@@ -3,13 +3,19 @@ let currentLine = 0;
 
 function animateText() {
     lines.forEach((line, index) => {
-        line.style.animation = 'none';
+        line.classList.remove('active');
+        line.querySelectorAll('.container--word').forEach(span => {
+            span.classList.remove('word-visible');
+        });
+
         if (index === currentLine) {
-            line.style.animation = 'fadeIn 0.4s ease forwards';
-            const words = line.textContent.split(/(\s|,\s)/);
-            line.innerHTML = words.map((word, i) => `<span style="animation: fadeIn 0.4s ease forwards ${i * 0.4}s;">${word}</span>`).join('');
-        } else {
-            line.style.animation = 'fadeOut 0.4s ease forwards';
+            line.classList.add('active');
+            const wordContainers = line.querySelectorAll('.container--word');
+            wordContainers.forEach((container, i) => {
+                setTimeout(() => {
+                    container.classList.add('word-visible');
+                }, i * 600); // Delay each word's animation by 0.6s
+            });
         }
     });
 

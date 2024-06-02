@@ -29,7 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 30px;
-    
+
 }
 
 /* Begin trailer  */
@@ -303,24 +303,74 @@ ul {
 /* End text  */
 
 
-/* Begin project  */
-#image-track {
+/* Begin lament  */
+#lament_container {
+    width: 100vw;
+    height: 100%;
+
     display: flex;
-    gap: 4vmin;
-    left: 50%;
-    user-select: none;
-  }
-  
-#image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
-    border-radius: 8px;
-    box-shadow: #c1b492 0 3px 10px;
+
+    background-color: #041421;
 }
 
-/* End project  */
+#lament_container .lament_column {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lament_column .lament_block {
+    width: 100%;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+.lament_column .lament_block .lament_title {
+    padding-top: 15px;
+}
+
+.lament_column .lament_space {
+    width: 100%;
+    height: 400px;
+
+    background-color: #041421;
+}
+
+.lament_column .lament_block .lament_img img {
+    width: 670px;
+    height: 1000px;
+}
+
+.interactable {
+    width: 670px;
+    height: 1000px;
+    background-position: center 70%;
+    background-size: 100%;  
+    opacity: 0.6;
+    border-radius: 5px;
+    
+    transition: background-size 400ms ease, opacity 400ms ease;
+}
+
+.interactable:hover {
+    background-size: 110%;
+    opacity: 0.95;
+    cursor: none;
+}
+
+.lament_desc {
+    color: #999999;
+}
+
+/* 670 x 1000 img */
+/* End lament  */
 
 
 /* Begin slogan  */
@@ -433,6 +483,7 @@ ul {
     align-items: center;
     justify-content: center;
 }
+
 .member {
     background-color: aqua;
     width: 95%;
@@ -451,8 +502,8 @@ ul {
 
 .member .member-image{
     background-color: #ff3e9d;
-    width: 35%;
-    height: 700px;
+    width: 400px;
+    height: 600px;
 
     margin: 50px;
 

@@ -499,7 +499,7 @@ ul {
 /* Begin showcase */
 #showcase {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
 
     padding-top: 40px;
     padding-bottom: 40px;
@@ -509,6 +509,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.showcase-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.showcase-text p {
+    font-size: 3.5em;
+
 }
 
 .showcase-image-track {

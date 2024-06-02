@@ -159,8 +159,10 @@ body:hover > #trailer {
     position: relative;
 }
 #menu #menu_sidebar{
-    width: 400px;
+    width: 600px;
     height: 800px;
+
+    border-radius: 15px;
 
     background-color: #ff3e9d;
 
@@ -169,6 +171,24 @@ body:hover > #trailer {
     left: -20px;
 
     z-index: 900;
+
+    display: none;
+}
+#menu::after{
+    height: 100vh;
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 700;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: none;
 }
 
 #navigation #menu i{
@@ -413,7 +433,7 @@ ul {
 
 /* Begin slogan  */
 #slogan{
-    background-color: brown;
+    /* background-color: brown; */
     width: 100%;
 
     padding: 30px 10px;
@@ -439,7 +459,7 @@ ul {
 
 /* Begin vriteria  */
 #criteria{
-    background-color: orange;
+    /* background-color: orange; */
 
     height: 2040px;
     width: 100%;

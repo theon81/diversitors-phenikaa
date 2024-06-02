@@ -116,6 +116,8 @@ body:hover > #trailer {
     position: fixed;
 
     z-index: 100;
+
+    background-color: rgb(20, 20, 20);
 }
 
 .navigation_items{
@@ -126,7 +128,6 @@ body:hover > #trailer {
     margin: 0 1px;
     
     display: flex;
-    justify-content: center;
     align-items: center;
     
     text-align: center;
@@ -145,6 +146,10 @@ body:hover > #trailer {
     width: 5%;
     margin: 0;
     padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navigation #nav{
@@ -179,7 +184,7 @@ body:hover > #trailer {
     
     opacity: 30%;
 
-    background-image: linear-gradient(to right, #d0d7c7dc, #4a1a39a3);
+    background-image: linear-gradient(to right, #00000040, #ffffff70);
     
     transition: width 0.3s ease-out;
 }
@@ -258,55 +263,22 @@ ul {
 
 
 /* Begin project  */
-#project{
-    background-color: aqua;
-    width: 100%;
-    height: 700px;
-
+#image-track {
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-}
-#project_block{
-    width: 100%;
-    height: 600px;
-    background-color: #4a2757;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    overflow: hidden;
-
-
-    position: relative;
-}
-.card-container {
-    background-color: #ff3e9d;
-    width: auto;
-    height: 400px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* animation: animation_card 10s infinite linear; */
-
-    transform: translateX(1200px) rotate(3deg);
-    transform-origin: center center;
+    gap: 4vmin;
+    left: 50%;
+    user-select: none;
+  }
+  
+#image-track > .image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% center;
+    border-radius: 8px;
+    box-shadow: #c1b492 0 3px 10px;
 }
 
-#project .project_card{
-    background-color: blueviolet;
-    width: 450px;
-    height: 300px;
-
-    margin: 0 20px;
-
-    display: inline-block;
-}
 /* End project  */
 
 

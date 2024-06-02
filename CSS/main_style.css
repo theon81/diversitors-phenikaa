@@ -114,6 +114,7 @@ body:hover > #trailer {
 
     z-index: 100;
 }
+
 .navigation_items{
     /* background-color: red; */
     height: 70px;
@@ -122,6 +123,7 @@ body:hover > #trailer {
     margin: 0 1px;
     
     display: flex;
+    justify-content: center;
     align-items: center;
     
     text-align: center;
@@ -131,17 +133,29 @@ body:hover > #trailer {
 
     box-sizing: border-box;
 }
+
+.fa-bars-staggered {
+    transform: scaleX(200%);
+}
+
 #navigation #menu{
     width: 5%;
     margin: 0;
     padding: 0;
 }
+
 #navigation #nav{
     width: 80%;
     /* padding: 0 5px; */
 }
+
 #navigation #logo{
     width: 10%;
+
+    background-image: url(../SVG/Comp\ 1.gif);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #navigation #menu i{
@@ -311,6 +325,11 @@ ul {
 
     margin-left: 45px;
 }
+
+#slogan h1:hover {
+    background-color: white;
+    color: black;
+  }
 /* End slogan  */
 
 

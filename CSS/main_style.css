@@ -383,7 +383,7 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.menber {
+.member {
     background-color: aqua;
     width: 95%;
     height: 800px;
@@ -395,11 +395,11 @@ ul {
     position: relative;
 }
 
-/* .menber.menber-reverse{
+/* .member.member-reverse{
     flex-direction: row-reverse;
 } */
 
-.menber .menber-image{
+.member .member-image{
     background-color: #ff3e9d;
     width: 35%;
     height: 700px;
@@ -413,12 +413,12 @@ ul {
 
     transition: transform 800ms ease-in-out;
 }
-/* .menber.menber-revers .menber-image{
+/* .member.member-revers .member-image{
     left: 0;
     right: 20%;
 } */
 
-.menber .menber-profile{
+.member .member-profile{
     background-color: #4a2757;
     width: 50%;
     height: 700px;
@@ -436,18 +436,18 @@ ul {
 
     transition: all 1200ms ease-in-out;
 }
-.menber .menber-profile h2{
+.member .member-profile h2{
     background-color: beige;
     margin: 5px;
 
     font-size: 28px;
 }
 
-.menber:hover .menber-image{
+.member:hover .member-image{
     transform: translateX(400px);
 }
 
-.menber:hover .menber-profile{
+.member:hover .member-profile{
     transform: translateX(-500px);
     opacity: 1;
 }

@@ -480,13 +480,16 @@ ul {
     font-size: 80px;
     font-weight: 800;
 
+    color: #000;
+
     margin-left: 45px;
+    transition: color 1s ease-in;
 }
 
-#slogan h1:hover {
-    background-color: white;
-    color: black;
-  }
+/* #slogan h1:hover {
+    background-color: black;
+    color: white;
+} */
 /* End slogan  */
 
 

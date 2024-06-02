@@ -27,9 +27,9 @@ const animateTrailer = (e, interacting) => {
 const getTrailerClass = type => {
     switch(type) {
         case "video":
-        return "fa-regular fa-heart";
+        return "fa-regular fa-gem";
         default:
-        return "fa-regular fa-heart"; 
+        return "fa-regular fa-gem"; 
     }
 }
 

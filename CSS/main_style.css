@@ -33,7 +33,6 @@ body {
 }
 
 /* Begin trailer  */
-/* 'trailer' là phần đuôi chuột */
 body:hover > #trailer {
     opacity: 1;
 }
@@ -55,7 +54,7 @@ body:hover > #trailer {
     display: grid;
     place-items: center;
 
-    background-color: #d0d6d6;
+    background-color: #fff;
     background-blend-mode: color-burn;
 }
 
@@ -64,7 +63,7 @@ body:hover > #trailer {
 }
 
 #trailer-icon {
-    font-size: 6px;
+    font-size: 8px;
     line-height: 4px;
     
     opacity: 0;

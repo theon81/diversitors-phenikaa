@@ -117,6 +117,8 @@
     border-radius: 2px;
     text-decoration: none;
     color: white;
+
+    margin: 0 20px;
 }
 
 #navigation #nav .nav_nav_items a:hover {

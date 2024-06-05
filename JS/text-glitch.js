@@ -5,14 +5,14 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         let interval = null;
         let animation = false;
 
-        element.addEventListener('mouseover', event => {
+        const glitchText = (event) => {
             if (animation) {
                 return;
             }
             animation = true;
             let iteration = 0;
             clearInterval(interval);
-            const glitchText = () => {
+            interval = setInterval(() => {
                 event.target.innerText = event.target.innerText
                     .split("")
                     .map((letter, index) => {
@@ -29,8 +29,13 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
                 }
     
                 iteration += 1 / 2;
-            }
-            interval = setInterval(glitchText,30);
+            },30);
+        }
+
+        element.addEventListener('mouseover', event =>{
+            glitchText(event);
         });
+
+        
     }
 );

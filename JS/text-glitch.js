@@ -1,5 +1,5 @@
 
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
     document.querySelectorAll(".glitch_item").forEach(element => {
         let interval = null;
@@ -12,8 +12,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             animation = true;
             let iteration = 0;
             clearInterval(interval);
-
-            interval = setInterval(() => {
+            const glitchText = () => {
                 event.target.innerText = event.target.innerText
                     .split("")
                     .map((letter, index) => {
@@ -23,14 +22,15 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
                         return letters[Math.floor(Math.random() * 26)];
                     })
                     .join("");
-
+    
                 if (iteration >= event.target.dataset.value.length) {
                     clearInterval(interval);
                     animation = false;
                 }
-
+    
                 iteration += 1 / 2;
-            }, 30);
+            }
+            interval = setInterval(glitchText,30);
         });
     }
 );

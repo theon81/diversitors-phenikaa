@@ -55,46 +55,55 @@
     position: relative;
 }
 
-#menu #menu_sidebar{
-    width: 600px;
-    height: 800px;
-
-    border-radius: 15px;
-
-    background-color: #ff3e9d;
-
-    position: absolute;
-    bottom: -800px;
-    left: -20px;
-
-    z-index: 900;
-
-    display: none;
-}
-
-#menu::after{
-    height: 100vh;
-    content: "";
-
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    right: 0;
-
-    z-index: 700;
-
-    background-color: rgba(0, 0, 0, 0.5);
-
-    display: none;
-}
-
-#navigation #menu i{
+#navigation #menu i {
     font-size: 24px;
     color: white;
 }
+#menu #sidebar_container {
+    width: 100%;
+    height: 1080px;
+    background-color: rgba(0, 0, 0, 0.7);
 
-#navigation #nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+
+    opacity: 0;
+
+    transition: opacity 400ms ease-in-out;
+
+    pointer-events: none;
+
+    z-index: 1000;
+}
+#menu #sidebar_container.show {
+    opacity: 1;
+}
+#sidebar_container #sidebar_box {
+    width: 0;
+    height: 800px;
+
+    border-radius: 14px;
+
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    transition: width 800ms ease-in-out;
+
+    background-color: violet;
+
+    pointer-events: auto;
+}
+#sidebar_container #sidebar_box.show {
+    width: 600px;
+}
+
+
+#navigation #nav {
     width: 80%;
     position: relative;
 }

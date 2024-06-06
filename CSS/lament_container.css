@@ -8,6 +8,8 @@
 
     background-color: #041421;
     z-index: 10;
+
+    padding-top: 100px;
 }
 
 #lament_container .lament_column {

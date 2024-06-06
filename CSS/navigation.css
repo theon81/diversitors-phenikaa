@@ -93,7 +93,7 @@
     color: white;
 }
 
-#navigation #nav{
+#navigation #nav {
     width: 80%;
     position: relative;
 }
@@ -116,6 +116,7 @@
     padding: 5px;
     border-radius: 2px;
     text-decoration: none;
+    font-size: 1.3em;
     color: white;
 }
 
@@ -141,7 +142,7 @@
 
     background-color: #f0f0f080;
 
-    transition: width 0.4s ease;
+    transition: width 0.4s ease-out;
 }
 /* End progressbar */
 

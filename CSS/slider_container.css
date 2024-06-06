@@ -1,13 +1,11 @@
 
 /* Begin slider  */
-#slider_container{
-    /* background-color: cyan; */
-
+#slider_container {
     height: 3200px;
     width: 100%;
 }
 
-#slider_container .slider_container-bar{
+#slider_container .slider_container-bar {
     width: 100%;
     height: 100px;
     background-color: #fff;

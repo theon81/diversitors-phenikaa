@@ -9,9 +9,13 @@
     background-color: #041421;
     z-index: 10;
 
+<<<<<<< HEAD
      padding: 0 40px;
 
     box-sizing: border-box;
+=======
+    padding-top: 100px;
+>>>>>>> 86b697c395aa1dc68d841a178e1514b36ddb63a1
 }
 
 #lament_container .lament_column {

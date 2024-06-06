@@ -119,6 +119,8 @@
     
     z-index: 200;
     transform: translateY(-55%);
+
+    margin-top: 20px;
 }
 
 #navigation #nav .nav_nav_items a {
@@ -126,6 +128,8 @@
     border-radius: 2px;
     text-decoration: none;
     color: white;
+
+    font-size: 32px;
 
     margin: 0 20px;
 }

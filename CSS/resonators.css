@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    background-color:tomato ;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cos_card{
+    width: 100vw;
+    height: 100vh;
+}
+
+.cos_card#cos_card-img1{
+    background-color: aqua;
+}
+.cos_card#cos_card-img2{
+    background-color: orangered;
+}
+.cos_card#cos_card-img3{
+    background-color: red;
+}
+.cos_card#cos_card-img4{
+    background-color: rebeccapurple;
+}
+.cos_card#cos_card-img5{
+    background-color: yellowgreen;
+}
+.cos_card#cos_card-img6{
+    background-color: violet;
+}
+.cos_card#cos_card-img7{
+    background-color: blue;
+}
+.cos_card#cos_card-img8{
+    background-color:green;
+}
+.cos_card#cos_card-img9{
+    background-color: aqua;
+}
+.cos_card#cos_card-img10{
+    background-color:wheat;
+}

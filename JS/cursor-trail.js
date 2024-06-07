@@ -47,17 +47,3 @@ window.onmousemove = e => {
         icon.className = getTrailerClass(interactable.dataset.type);
     }
 }
-<<<<<<< HEAD
-
-
-// window.addEventListener('mousemove',function(e){
-//     let cursor = document.querySelector(".cursor_lineargradient");
-//     let cursorX = e.pageX;
-//     let cursorY = e.pageY;
-//     this.setTimeout(function(){
-//         cursor.style.top = cursorY-200 + "px";
-//         cursor.style.left = cursorX-200 + "px";
-//     },100);
-// });
-=======
->>>>>>> 225ca1568fd1a1e32bacfbc241212ffc40905bf9

@@ -11,7 +11,7 @@ const animateTrailer = (e, interacting) => {
     const duration = Math.min(400, distance * 50);
     
     const keyframes = {
-        transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`
+        transform: `translate(${x}px, ${y}px) scale(${interacting ? 5 : 1})`
     };
 
     trailer.animate(keyframes, {
@@ -49,12 +49,12 @@ window.onmousemove = e => {
 }
 
 
-window.addEventListener('mousemove',function(e){
-    let cursor = document.querySelector(".cursor_lineargradient");
-    let cursorX = e.pageX;
-    let cursorY = e.pageY;
-    this.setTimeout(function(){
-        cursor.style.top = cursorY-200 + "px";
-        cursor.style.left = cursorX-200 + "px";
-    },100);
-});
+// window.addEventListener('mousemove',function(e){
+//     let cursor = document.querySelector(".cursor_lineargradient");
+//     let cursorX = e.pageX;
+//     let cursorY = e.pageY;
+//     this.setTimeout(function(){
+//         cursor.style.top = cursorY-200 + "px";
+//         cursor.style.left = cursorX-200 + "px";
+//     },100);
+// });

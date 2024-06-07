@@ -20,7 +20,7 @@ document.querySelectorAll(".glitch_item").forEach(element => {
         let iteration = 0;
         clearInterval(interval);
         interval = setInterval(() => {
-            event.target.innerText = event.target.innerText
+            event.target.innerHTML = event.target.dataset.value
                 .split("")
                 .map((letter, index) => {
                     if (index < iteration) {

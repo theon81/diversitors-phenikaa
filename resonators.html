@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/resonators.css">
+
+    <link rel="icon" type="image/png" href="IMG/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="IMG/favicon-16x16.png" sizes="16x16" />
+    <!-- favicon -->
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        #container{
+            width: 100%;
+            background-color:tomato ;
+            display: flex;
+            flex-direction: column;
+
+            overflow: hidden;
+            scroll-snap-type: y mandatory;
+        }
+
+
+        .cos_card{
+            width: 100vw;
+            height: 100vh;
+
+            scroll-snap-align: start;
+        }
+
+        .cos_card#cos_card-img1{
+            background-color: aqua;
+        }
+        .cos_card#cos_card-img2{
+            background-color: orangered;
+        }
+        .cos_card#cos_card-img3{
+            background-color: red;
+        }
+        .cos_card#cos_card-img4{
+            background-color: rebeccapurple;
+        }
+        .cos_card#cos_card-img5{
+            background-color: yellowgreen;
+        }
+        .cos_card#cos_card-img6{
+            background-color: violet;
+        }
+        .cos_card#cos_card-img7{
+            background-color: blue;
+        }
+        .cos_card#cos_card-img8{
+            background-color:green;
+        }
+        .cos_card#cos_card-img9{
+            background-color: aqua;
+        }
+        .cos_card#cos_card-img10{
+            background-color:wheat;
+        }
+    </style>
+     
+    <title>Diversitors Phenikaa</title>
+</head>
+<body>
+    <div id="container">
+        <div class="cos_card" id="cos_card-img1"></div>
+        <div class="cos_card" id="cos_card-img2"></div>
+        <div class="cos_card" id="cos_card-img3"></div>
+        <div class="cos_card" id="cos_card-img4"></div>
+        <div class="cos_card" id="cos_card-img5"></div>
+        <div class="cos_card" id="cos_card-img6"></div>
+        <div class="cos_card" id="cos_card-img7"></div>
+        <div class="cos_card" id="cos_card-img8"></div>
+        <div class="cos_card" id="cos_card-img9"></div>
+        <div class="cos_card" id="cos_card-img10"></div>
+    </div>
+    <script>
+        let container = document.getElementById('container');
+        let curentSelector = 0;
+        let childs = document.querySelectorAll('.cos_card');
+        let isScroll;
+
+        container.addEventListener('wheel', (event) =>{
+            event.preventDefault();
+            clearTimeout(isScroll);
+            isScroll = setTimeout(()=>{
+                if (event.deltaY > 0) {
+                // Scroll down
+                    if (curentSelector < childs.length - 1) {
+                        curentSelector = (curentSelector + 1) % childs.length ;
+                    }
+                } else {
+                    // Scroll up
+                    if (curentSelector > 0) {
+                        curentSelector = (curentSelector - 1 + childs.length) % childs.length ;
+                    }
+                }
+    
+                childs[curentSelector].scrollIntoView({
+                    behavior: 'smooth'
+                });
+            },300);
+        });
+    </script>
+</body>
+</html>

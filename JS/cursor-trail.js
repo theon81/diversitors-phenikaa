@@ -47,6 +47,7 @@ window.onmousemove = e => {
         icon.className = getTrailerClass(interactable.dataset.type);
     }
 }
+<<<<<<< HEAD
 
 
 // window.addEventListener('mousemove',function(e){
@@ -58,3 +59,5 @@ window.onmousemove = e => {
 //         cursor.style.left = cursorX-200 + "px";
 //     },100);
 // });
+=======
+>>>>>>> 225ca1568fd1a1e32bacfbc241212ffc40905bf9

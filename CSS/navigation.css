@@ -92,21 +92,21 @@
     top: 20px;
     left: 30px;
 
-    transition: width 800ms ease-in-out;
-
     background: #86b9b037;
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(15px);
-
+    
     pointer-events: auto;
-
+    
     display: flex;
     flex-direction: column;
+
+    transition: width 800ms ease-in-out;
 }
 
 #sidebar_container #sidebar_box.show {
-    width: 600px;
+    width: 700px;
 }
 
 #sidebar_box #sidebar-close {
@@ -144,7 +144,143 @@
     color: #fff;
     background-color: #041421;
 }
+#sidebar_box #sb_form {
+    width: 100%;
+    height: 800px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+#sidebar_box #sb_form h1{
+    color: white;
+    font-size: 64px;
+
+    margin-bottom: 20px;
+
+}
+#sidebar_box #sb_form label{
+    align-self: start;
+    margin-left: 100px;
+    margin-top: 5px;
+
+    color: white ;
+}
+#sidebar_box #sb_form > input{
+    width: 75%;
+    height: 60px;
+
+    border-radius: 24px;
+
+    padding: 0 20px;
+    margin-top: 15px;
+
+    font-size: 19px;
+
+    box-sizing: border-box;
+
+    border: none;
+
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#sidebar_box #sb_form #sb_form-sp{
+    margin: 10px 0;
+
+    display: flex;
+
+    color: white;
+}
+#sidebar_box #sb_form #sb_form-sp a {
+    margin-right: 180px;
+}
+#sidebar_box #sb_form #sb_form-sp input {
+    width: 20px;
+    height: 20px;
+
+    margin-right: 10px;
+}
+#sidebar_box #sb_form input[type="submit"]{
+    color: white;
+    font-size: 24px;
+
+    /* background-color: ; */
+} 
+#sb_form #sb_form-icon{
+    width: 100%;
+    height: 80px;
+
+    margin-top: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sb_form #sb_form-icon > i{
+    font-size: 40px;
+
+    margin: 0 40px;
+}
+
+#sidebar_box #sb_form #sb_form-download {
+    width: 100%;
+    height: 250px;
+}
+#sb_form-download #download-qr{
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#download-qr #qr{
+    width: 130px;
+    height: 130px;
+    /* background-color: violet; */
+
+    background-image: url(../IMG/downloads/downloadqr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#sb_form-download #download-store{
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#sb_form-download #download-store .store-items{
+    width: 30%;
+    height: 60px;
+}
+#sb_form-download #download-store .store-items a{
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 1px rgba(255,255, 255, 0.5);
+}
+.store-items a > i{
+    font-size: 40px;
+    margin-right: 8px;
+}
 #navigation #nav {
     width: 80%;
     position: relative;

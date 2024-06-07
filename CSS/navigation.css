@@ -21,17 +21,16 @@
     -webkit-backdrop-filter: blur(12.4px);
 }
 
-.navigation_items{
+.navigation_items {
     /* background-color: red; */
     height: 70px;
 
     padding-top:30px ;
     margin: 0 1px;
+    position: relative;
     
     display: flex;
     align-items: center;
-    
-    text-align: center;
 
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 2px;
@@ -64,6 +63,7 @@
     height: 1080px;
     background-color: rgba(0, 0, 0, 0.7);
 
+<<<<<<< HEAD
     position: fixed;
     top: 0;
     right: 0;
@@ -103,35 +103,46 @@
 }
 
 
+=======
+>>>>>>> c2c4fedb1a2428d6e0bd769666be98e0de2e5243
 #navigation #nav {
     width: 80%;
     position: relative;
 }
 
-#navigation #nav .nav_nav_items {
+#navigation .nav_nav_items {
     width: 100%;
+    height: 100%;
     position: absolute;
+    top: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 200px;
     
     z-index: 200;
+<<<<<<< HEAD
     transform: translateY(-55%);
 
     margin-top: 20px;
+=======
+>>>>>>> c2c4fedb1a2428d6e0bd769666be98e0de2e5243
 }
 
 #navigation #nav .nav_nav_items a {
     padding: 5px;
     border-radius: 2px;
     text-decoration: none;
+    font-size: 1.3em;
     color: white;
+<<<<<<< HEAD
 
     font-size: 32px;
 
     margin: 0 20px;
+=======
+>>>>>>> c2c4fedb1a2428d6e0bd769666be98e0de2e5243
 }
 
 #navigation #nav .nav_nav_items a:hover {
@@ -156,7 +167,7 @@
 
     background-color: #f0f0f080;
 
-    transition: width 0.3s ease-out;
+    transition: width 0.4s ease-out;
 }
 /* End progressbar */
 

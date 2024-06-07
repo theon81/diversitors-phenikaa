@@ -5,44 +5,33 @@
 
 #container{
     width: 100%;
-    background-color:tomato ;
     display: flex;
+    background-color: black;
+    
     flex-direction: column;
+
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
 }
 
 
 .cos_card{
     width: 100vw;
     height: 100vh;
+
+    scroll-snap-align: start;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.cos_card#cos_card-img1{
-    background-color: aqua;
-}
-.cos_card#cos_card-img2{
-    background-color: orangered;
-}
-.cos_card#cos_card-img3{
-    background-color: red;
-}
-.cos_card#cos_card-img4{
-    background-color: rebeccapurple;
-}
-.cos_card#cos_card-img5{
-    background-color: yellowgreen;
-}
-.cos_card#cos_card-img6{
-    background-color: violet;
-}
-.cos_card#cos_card-img7{
-    background-color: blue;
-}
-.cos_card#cos_card-img8{
-    background-color:green;
-}
-.cos_card#cos_card-img9{
-    background-color: aqua;
-}
-.cos_card#cos_card-img10{
-    background-color:wheat;
-}
+.cos_card#cos_card-img1{background-image: url(../char-des/char-des-cards/Calcharo_Splash_Art.webp);}
+.cos_card#cos_card-img2{background-image: url(../char-des/char-des-cards/Encore_Splash_Art.webp);}
+.cos_card#cos_card-img3{background-image: url(../char-des/char-des-cards/Jianxin_Splash_Art.webp);}
+.cos_card#cos_card-img4{background-image: url(../char-des/char-des-cards/Jiyan_Splash_Art.webp);}
+.cos_card#cos_card-img5{background-image: url(../char-des/char-des-cards/Lingyang_Splash_Art.webp);}
+.cos_card#cos_card-img6{background-image: url(../char-des/char-des-cards/Verina_Splash_Art.webp);}
+.cos_card#cos_card-img7{background-image: url(../char-des/char-des-cards/Yinlin_Splash_Art.png);}
+.cos_card#cos_card-img8{background-image: url(../char-des/char-des-cards/Yinlin_Splash_Art.webp);}

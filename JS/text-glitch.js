@@ -36,7 +36,7 @@ document.querySelectorAll(".glitch_item").forEach(element => {
             }
 
             iteration += (1 / 2) * animationSpeed;
-        }, 30 / animationSpeed);
+        }, 20 / animationSpeed);
     }
 
     const handleMouseOver = (event) => {

@@ -11,7 +11,7 @@ const animateTrailer = (e, interacting) => {
     const duration = Math.min(400, distance * 50);
     
     const keyframes = {
-        transform: `translate(${x}px, ${y}px) scale(${interacting ? 4 : 1})`
+        transform: `translate(${x}px, ${y}px) scale(${interacting ? 5 : 1})`
     };
 
     trailer.animate(keyframes, {

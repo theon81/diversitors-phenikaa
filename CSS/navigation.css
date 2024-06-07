@@ -116,12 +116,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 150px;
     
     z-index: 200;
-    transform: translateY(-55%);
-
-    margin-top: 20px;
 }
 
 #navigation #nav .nav_nav_items a {
@@ -130,10 +127,7 @@
     text-decoration: none;
     font-size: 1.3em;
     color: white;
-
     font-size: 32px;
-
-    margin: 0 20px;
 }
 
 #navigation #nav .nav_nav_items a:hover {

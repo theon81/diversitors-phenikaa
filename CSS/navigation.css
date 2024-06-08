@@ -221,10 +221,34 @@
     align-items: center;
     justify-content: center;
 }
-#sb_form #sb_form-icon > i{
+#sb_form #sb_form-icon .icon{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+
+    overflow: hidden;
+    transition: background-color 500ms ease-in-out;
+}
+#sb_form #sb_form-icon .icon:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#sb_form #sb_form-icon a {
+    width: 65px;
+    height: 65px;
+
+    box-shadow: 1px 2px 4px 1px rgba(255,255, 255, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sb_form #sb_form-icon a > i{
     font-size: 40px;
 
-    margin: 0 40px;
 }
 
 #sidebar_box #sb_form #sb_form-download {
@@ -260,6 +284,9 @@
 #sb_form-download #download-store .store-items{
     width: 30%;
     height: 60px;
+
+    overflow: hidden;
+    transition: background-color 500ms ease-in-out;
 }
 #sb_form-download #download-store .store-items a{
     width: 100%;
@@ -276,6 +303,10 @@
 
     border-radius: 12px;
     box-shadow: 0px 2px 4px 1px rgba(255,255, 255, 0.5);
+
+}
+.store-items:hover {
+    background-color: white;
 }
 .store-items a > i{
     font-size: 40px;

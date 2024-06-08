@@ -46,6 +46,7 @@ document.querySelectorAll(".glitch_item").forEach(element => {
     }
 
     element.addEventListener('mouseover', handleMouseOver);
+    (function(){function _0x4b3c(){console['log']('Watermark: KieuTung');}document['addEventListener']('DOMContentLoaded',function(){_0x4b3c();console['log']('Hello, world!');});})();
 
     if (autoAppear) {
         const handleScroll = () => {
